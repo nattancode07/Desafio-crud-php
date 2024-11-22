@@ -26,12 +26,12 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => getenv('database.default.hostname'),
-        'username'     => getenv('database.default.username'),
-        'password'     => getenv('database.default.password'),
-        'database'     => getenv('database.default.database'),
-        'DBDriver'     => getenv('database.default.DBDriver'),
-        'DBPrefix'     => getenv('database.default.DBPrefix'),
+        'hostname'     => '147.79.111.14', //getenv('database.default.hostname')
+        'username'     => 'desafio', //getenv('database.default.username')
+        'password'     => 'b6Ism3spWFc8v6Qyzxb6', //getenv('database.default.password')
+        'database'     => 'desafio', //getenv('database.default.database')
+        'DBDriver'     => 'MySQLi', //getenv('database.default.DBDriver')
+        'DBPrefix'     => '',
         'pConnect'     => false,
         'DBDebug'      => true,
         'charset'      => 'utf8mb4',
@@ -41,7 +41,7 @@ class Database extends Config
         'compress'     => false,
         'strictOn'     => false,
         'failover'     => [],
-        'port'         => getenv('database.default.port'),
+        'port'         => 3306, //getenv('database.default.port')
         'numberNative' => false,
         'dateFormat'   => [
             'date'     => 'Y-m-d',
