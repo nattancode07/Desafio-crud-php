@@ -20,6 +20,8 @@ class Product extends BaseController
         ]);
     }
 
+    //Excluir produtos
+
     public function delete($id) {
         if ($this-> productModel->delete($id)) {
             echo view('messages', [
@@ -29,6 +31,8 @@ class Product extends BaseController
             echo "Erro.";
         }
     }
+
+    //Criação de novos produtos
 
     public function create(){
         return view('form');
@@ -43,6 +47,8 @@ class Product extends BaseController
             echo "Ocorreu um erro.";
         }
     }
+
+    //Edição de produtos
 
      public function edit($id) {
         return view('form', [
